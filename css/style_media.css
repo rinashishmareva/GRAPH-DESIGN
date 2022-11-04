@@ -1,0 +1,395 @@
+
+@media only screen and (max-width: 2000px) {
+    
+    
+    .arrow-next.arrow_type1 {
+        display: none;
+    }
+    .arrow-prev.arrow_type1 {
+        right: 400px;
+        top: 1120px;
+    }
+  
+
+    .button_consult {
+        z-index: 1;
+        font-size: 25px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1500px) {
+   
+    .intro {
+        height: 1500px;
+    }
+
+    .intro_title {
+        font-size: 12vw; /*размер всех заголовков*/
+    }
+    
+    .intro_name {
+        margin-left: 0;
+        z-index: 2;
+        font-size: 5vw;
+        margin-bottom: 25px;
+    }
+
+    .intro_subtitle {
+        margin-left: 0;
+        z-index: 2;
+    }
+
+    .intro_btn {
+        margin-left: 0;
+    }
+
+    .gradient_1 {
+        padding-left: 0;
+    }
+
+    .button_start {
+        z-index: 1;
+        font-size: 25px;
+    }
+
+    .slider {
+        margin: 30px 0;
+    }
+
+    .carousel-wrapper {
+        height: 800px;
+    }
+    .carousel-wrapper div {
+        height: 800px;
+        width: 800px;
+    }
+
+    .button_02 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    #rina {
+        top: 1355px;
+        right: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {   
+    
+    .header_burger {
+        display: block;
+    }
+
+    .header_nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #1E1E1E;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%);
+        transition: 0.2s all linear;
+    }
+
+    .header_nav_active {
+        transform: translateX(0);
+    }
+
+    .header_item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .header_item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header_link {
+        color: #E7E7E5;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .header_nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header_nav-close-line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #E7E7E5;
+        position: absolute;
+        top: 50%; 
+    }
+
+    .header_nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .intro {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 1100px;
+    }
+
+    .animate_el {
+        scale: 0.9;
+        padding: 10%;
+    }
+
+    .animate_el img {
+        top: 170px;
+    }
+
+    .grid-2 {
+        opacity: 0;
+    }
+
+    .gragient_1 {
+        padding-top: 0; /*не работают медиа для картинки*/
+        padding-left: 0;
+    }
+
+    .gragient_1_img {
+        z-index: -1;
+    }
+
+    #rina {
+        display: none;
+    }
+
+    
+    .list_title {
+        font-size: 12vw;
+        padding-bottom: 15pxs;
+    }
+
+    .reviews_title {
+        font-size: 12vw;
+        padding-bottom: 10px;
+    }
+
+    #and_letter {
+        font-size: 4vw;
+    }
+
+    .download {
+        font-size: 5vw;
+        line-height: 30px;
+    }
+
+   
+    .download_02 {
+        font-size: 7vw;
+        line-height: 30px;
+    }
+
+    
+
+    .button {
+        margin-left: 0;
+    }
+
+    .start_edu_title {
+        font-size: 12vw;
+    }
+
+    .price {
+        font-size: 25px;
+    }
+
+    .footer_item {
+        flex-direction: column;
+    }
+  
+    .footer_content {
+    flex-direction: column;
+   }
+   
+   
+    .footer_logo {
+        width: 100%;
+    }
+
+    .carousel-wrapper {
+        height: 600px;
+    }
+
+    .carousel-wrapper div {
+        height: 600px;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .intro {
+        height: 850px;
+    }
+
+    .intro_subtitle {
+        font-size: 20px;
+    }
+
+    .animate_el {
+        scale: 0.7;
+        padding: 10%;
+    }
+
+    .animate_el img {
+        top: 145px;
+    }
+
+    .carousel-wrapper {
+        height: 400px;
+    }
+
+    .carousel-wrapper div {
+        height: 400px;
+        width: 400px;
+    }
+
+    .button_02 {
+        font-size: 25px;
+    }
+
+    .table {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .table_point {
+        font-size: 30px;
+        padding-bottom: 15px;
+        line-height: 35px;
+    }
+
+    .list_point {
+        font-size: 30px;
+    }
+
+    .list_table, td {
+        padding: 35px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .button_consult {
+        font-size: 15px;
+    }
+
+
+    .button_start {
+        z-index: 1;
+        font-size: 15px;
+    }
+
+    .intro {
+        height: 800px;
+    }
+
+    .intro_name {
+        margin-bottom: 15px;
+    }
+
+    .animate_el {
+        scale: 0.7;
+        padding: 10%;
+    }
+
+    .animate_el img {
+        top: 120px;
+    }
+  
+    .carousel-wrapper {
+        height: 300px;
+    }
+    .carousel-wrapper div {
+        height: 300px;
+        width: 300px;
+    }
+
+    .table {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .table_point {
+        font-size: 25px;
+        padding-bottom: 10px;
+        line-height: 30px;
+    }
+
+    .list_point {
+        font-size: 25px;
+    }
+
+    .list_table, td {
+        padding: 25px;
+    }
+
+    .button_03 {
+        margin-left: 10px;
+    }
+
+    .footer_logo_pic {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .intro {
+        height: 700px;
+    }
+
+    .intro_name {
+       font-size: 20px;
+    }
+
+    .intro_subtitle {
+        font-size: 15px;
+    }
+
+    .animate_el {
+        scale: 0.6;
+        padding: 10%;
+    }
+
+    .animate_el img {
+        top: 115px;
+    }
+    
+    .list_table, td {
+        padding: 15px;
+    }
+
+    .price {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+}

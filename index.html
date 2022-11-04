@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс Графический Дизайн</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_media.css">
+</head>
+<body>
+   <header class="header">
+
+    <div class="grids">
+        <div class="grid grid-1"></div>
+        <div class="grid grid-2"></div>
+        <div class="grid grid-3"></div>
+        <div class="grid grid-4"></div>
+    </div>
+    
+        <div class="wrapper">
+            <div class="header_wrapper">
+            
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Главная</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">О курсе</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Программа</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Отзывы</a>
+                        </li>
+                    </ul>
+                    <div class="header_nav-close">
+                        <span class="header_nav-close-line"></span>
+                        <span class="header_nav-close-line"></span>
+                    </div>
+                </nav>
+                <div class="header_burger burger">
+                    <span class="burger_line burger_line_first"></span>
+                    <span class="burger_line burger_line_second"></span>
+                    <span class="burger_line burger_line_third"></span>
+                </div>
+                
+            </div>
+        </div> 
+   </header> 
+
+   <main class="main">
+
+        <section class="intro">
+
+            <div class="grids">
+                <div class="grid grid-1"></div>
+                <div class="grid grid-2"></div>
+                <div class="grid grid-3"></div>
+                <div class="grid grid-4"></div>
+            </div>
+
+            <div class="golden_line"></div>
+            <div class="gradient_1">
+               <div class="gradient_1_img"></div>
+            </div>
+
+            <div class="wrapper">
+                <h1 class="intro_title">ГРАФИЧЕСКИЙ ДИЗАЙН</h1>
+                <h2 class="intro_name">RINA SHISHMAREVA</h2>
+                <p class="intro_subtitle">Авторский индивидуальный курс по работе 
+                    с программами Adobe Illustrator, Photosop, Figma.</p>
+                <div class="button intro_btn">
+                    <a href="#" style="--clr:#F6D365" class="button_consult" ><span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span><i></i></a>
+                </div>
+
+                <div class="animate_el">
+                    <h2 id="circle_text">о курсе • программа • отзывы • </h2>
+                    <img src="./img/arrow_down.svg" alt="arrow">
+                </div>
+
+                <script>
+                    const circle_text = document.querySelector('#circle_text');
+                    circle_text.innerHTML = circle_text.textContent.replace(/\S/g,"<span class=\"circle_span\">$&</span>");
+
+                    const element = circle_text.querySelectorAll('.circle_span');
+                    for(let i = 0; i<element.length; i++){
+                        element[i].style.transform = "rotate("+i*15+"deg)"
+                    }
+                </script>
+            </div>
+        </section>
+
+        <img src="./img/rina.png" alt="rina" id="rina">
+
+        <section class="list">
+            <div class="wrapper">
+                <h1 class="list_title">О КУРСЕ</h1>
+            </div>
+        </section>
+
+        <section class="table">
+
+           
+
+            <table class="list_table">
+                <tr>
+                  <td class="list_point">01.</td>
+                    <td>
+                        <h3 class="table_point">
+                            ЛИЧНЫЕ ЗАНЯТИЯ ↗
+                        </h3>
+                        
+                        Уроки проходят в Zoom индивидуально с вами.
+                        <br>А значит есть возможность подстроиться под Ваши цели, 
+                        <br>Вашу скорость восприятия и Ваш уровень.
+                    </td>
+                </tr>
+                <tr>
+                  <td class="list_point">02.</td>
+                  <td>
+                        <h3 class="table_point">
+                            ГАРАНТИЯ РЕЗУЛЬТАТА ↗
+                        </h3>
+                        Нельзя слиться. 
+                        <br>В отличие от курса, который вы проходите сами даже с обратной связью,
+                        <br>здесь вас в определенное время ждут на уроке. 
+                        <br>Выйти без работ не получится. 
+                    </td>
+                </tr>
+                <tr>
+                  <td class="list_point">03.</td>
+                  <td>
+                        <h3 class="table_point">
+                            УРОКИ В ДОСТУПЕ НАВСЕГДА ↗
+                        </h3>
+                        Каждый урок записывается. Вы можете пересматривать занятия 
+                        <br>и повторять материал, 
+                        <br>как во время, так и после прохождения курса.
+                    </td>
+                </tr>
+              </table>
+        </section>
+        
+       <section class="list">
+            <div class="wrapper">
+                <h1 class="list_title">ПРОГРАММА</h1>
+                <a href="#" class="download">СКАЧАТЬ ПОЛНУЮ ВЕРСИЮ ↗</a>
+            </div>
+
+            <div class="slider" id="list_slider">                
+                <div class="carousel-wrapper">
+                    <div style="background-image: url('./img/slide_01.png')">
+                        <span class="title_slide"></span></div>
+                    <div style="background-image: url('./img/slide_02.png')">
+                        <span class="title_slide"></span></div>
+                    <div style="background-image: url('./img/slide_03.png')">
+                        <span class="title_slide"></span></div>
+                        
+                    <span class="icon-arrow_back" id="list_prev"><img src="./img/↓.png" alt="arrow" class="slider_1"></span>
+                    <span class="icon-arrow_forward" id="list_next"><img src="./img/↓.png" alt="arrow" class="slider_1"></span>
+                </div>
+                    
+                </div>
+            </div>
+
+            <div class="button_02">
+                <a href="#" style="--clr:#F6D365" class="button_register" ><span>ЗАПИСАТЬСЯ</span><i></i></a>
+            </div>
+
+        </section>
+
+        <section class="reviews">
+            <div class="grids">
+                <div class="grid grid-1"></div>
+                <div class="grid grid-2"></div>
+                <div class="grid grid-3"></div>
+                <div class="grid grid-4"></div>
+            </div>
+
+            <div class="wrapper">
+                <h1 class="reviews_title">ОТЗЫВЫ <span id="and_letter">и</span> РАБОТЫ</h1>
+                <a href="#" class="download_02">ЧИТАТЬ И СМОТРЕТЬ ВСЕ ↗</a>
+            </div>
+
+            <div class="slider slider_reviews" id="list_slider">                
+                <div class="carousel-wrapper_reviews">
+                    <div style="background-image: url('./img/slide_01.png')">
+                        <span class="title_slide"></span></div>
+                    <div style="background-image: url('./img/slide_02.png')">
+                        <span class="title_slide"></span></div>
+                    <div style="background-image: url('./img/slide_03.png')">
+                        <span class="title_slide"></span></div>
+                        
+                    <span class="icon-arrow_back" id="reviews_prev"><img src="./img/↓.png" alt="arrow" class="slider_1"></span>
+                    <span class="icon-arrow_forward" id="reviews_next"><img src="./img/↓.png" alt="arrow" class="slider_1"></span>
+                </div>
+                    
+            </div>
+
+        </section>
+
+        <section class="start_edu">
+
+            <div class="grids">
+                <div class="grid grid-1"></div>
+                <div class="grid grid-2"></div>
+                <div class="grid grid-3"></div>
+                <div class="grid grid-4"></div>
+            </div>
+
+            <div class="gradient_2">
+                <div class="gradient_2_img"></div>
+             </div> 
+
+            <div class="wrapper">
+                <h1 class="start_edu_title">НАЧАТЬ ОБУЧЕНИЕ</h1>
+                <p class="price">СТОИМОСТЬ ТАКОЙ СОВМЕСТНОЙ РАБОТЫ<span style="font-weight:bold;"> 
+                    40 000 руб.</span></p>
+                <p class="price">Оплата происходит двумя частями.<br> 
+                    Чек об оказании услуг выдается.</p>
+
+                <div class="button_03">
+                    <a href="#" style="--clr:#F6D365" class="button_start" >
+                        <span>СТАТЬ ДИЗАЙНЕРОМ</span><i></i></a>
+                </div>
+               
+            </div>
+
+
+        </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer_item">
+                <div class="footer_logo">
+                    <img src="img/fot_logo.png" alt="logo" class="footer_logo_pic">
+                </div>
+                <div class="footer_content">
+                    <ul class="footer_text">
+                        <li class="footer_text-item">
+                            <h3 class="footer_text-info">Шишмарева Рина Сергеевна</h3>
+                        </li>
+                        <li class="footer_text-item">
+                            <h3 class="footer_text-info">ИНН 143306577293</h3>
+                        </li>
+                    </ul>
+                    <ul class="footer_link">
+                        <li class="footer_link-item">
+                            <a href="https://instagram.com/rinamayone" class="inst"><img src="img/inst.png" alt="inst"></a>
+                        </li>
+                        <li class="footer_link-item">
+                            <a href="https://t.me/rinamayone" class="inst"><img src="img/telegram.png" alt="telegram"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>     
+</main>
+
+   <script src="./main.js"></script>
+</body>
+</html>
