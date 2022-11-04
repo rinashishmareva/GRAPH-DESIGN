@@ -43,8 +43,6 @@ function animate(slider_arr, loop) {
   }
 }
 
-
-
 (function () {
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.header_nav');
