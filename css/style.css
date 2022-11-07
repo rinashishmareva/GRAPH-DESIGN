@@ -68,6 +68,7 @@ body {
     width: 40px;
     height: 28px;
     position: relative;
+    cursor: pointer;
 }
 
 .burger_line {
@@ -382,7 +383,7 @@ body {
     text-decoration: none;
 }
 
-/* Slider styles start */
+/* Slider_1 styles start */
   
 .slider {
     position: relative;
@@ -397,14 +398,17 @@ body {
 
 }
 .carousel-wrapper div {
-    width:1080px;
-    height: 1080px;
     position: absolute;
     transition: all 1s;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0;
+}
+
+#list_slider .carousel-wrapper div {
+    width:1080px;
+    height: 1080px;
 }
 
 
@@ -426,7 +430,7 @@ body {
     transition: 0.5s;
     
 }
-#list_prev img,#next img {
+#list_prev img, #list_next img {
     width:100%;
   
 }
@@ -435,7 +439,47 @@ body {
     opacity: 50%;
 }
 
-/* Slider styles end */
+/* Slider_1 styles end */
+
+/* Slider_2 styles start */
+
+#reviews_slider .carousel-wrapper {
+    height:700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/macBook.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#reviews_slider .carousel-wrapper div {
+    height: 550px;
+    width: 550px;
+}
+
+#reviews_prev {
+    left:10%;
+    transition: 0.5s;
+    
+}
+#reviews_next {
+    right:10%;
+    transition: 0.5s;
+    
+}
+#reviews_prev img,#reviews_next img {
+    width:100%;
+  
+}
+#reviews_prev:hover,
+#reviews_next:hover {
+    opacity: 50%;
+}
+
+/* Slider_2 styles end */
 
 /* Button_02 styles start */
 

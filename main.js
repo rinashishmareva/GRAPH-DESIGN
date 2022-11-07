@@ -1,13 +1,10 @@
 
 
-const reviews_slider = document.querySelector('#reviews_slider');
-
-const list_slider = document.querySelector('#list_slider');
-
 //for list_slider
-const list_slides = list_slider.querySelectorAll('.carousel-wrapper div');
-const list_prev = document.querySelector('#list_prev');
-const list_next = document.querySelector('#list_next');
+const l_slider = document.querySelector('#list_slider');
+const list_slides = l_slider.querySelectorAll('.carousel-wrapper div');
+const list_prev = l_slider.querySelector('#list_prev');
+const list_next = l_slider.querySelector('#list_next');
 
 for (let index = 0; index < list_slides.length; index++) {
     const element = list_slides[index];
@@ -26,9 +23,38 @@ function list_goPrev(){
     animate(list_slides, list_loop);
 }
 
-list_next.addEventListener('click',list_goNext);
-list_prev.addEventListener('click',list_goPrev);
-//**********************************************
+list_next.addEventListener('click', list_goNext);
+list_prev.addEventListener('click', list_goPrev);
+
+//for reviews_slider
+
+const r_slider = document.querySelector('#reviews_slider');
+const reviews_slides = r_slider.querySelectorAll('.carousel-wrapper div');
+const reviews_prev = r_slider.querySelector('#reviews_prev');
+const reviews_next = r_slider.querySelector('#reviews_next');
+
+for (let index = 0; index < reviews_slides.length; index++) {
+    const element = reviews_slides[index];
+    element.style.transform = "translateX("+100*(index)+"%)";
+}
+reviews_slides[0].style.opacity = "1";
+
+let reviews_loop = 0 + 1000*reviews_slides.length;  
+function reviews_goNext(){
+    reviews_loop++;
+    animate(reviews_slides, reviews_loop);
+}
+
+function reviews_goPrev(){
+    reviews_loop--;
+    animate(reviews_slides, reviews_loop);
+}
+
+reviews_next.addEventListener('click',reviews_goNext);
+reviews_prev.addEventListener('click',reviews_goPrev);
+
+
+
 function animate(slider_arr, loop) {
   for (let index = 0; index < slider_arr.length; index++) {
     const element = slider_arr[index];

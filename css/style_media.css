@@ -54,16 +54,21 @@
         font-size: 25px;
     }
 
-    .slider {
+    #list_sliders {
         margin: 30px 0;
     }
 
     .carousel-wrapper {
         height: 800px;
     }
-    .carousel-wrapper div {
+    #list_slider .carousel-wrapper div {
         height: 800px;
         width: 800px;
+    }
+    
+    #reviews_slider .carousel-wrapper div {
+        height: 500px;
+        width: 500px;
     }
 
     .button_02 {
@@ -124,6 +129,7 @@
         top: 20px;
         right: 20px;
         z-index: 11;
+        cursor: pointer;
     }
 
     .header_nav-close-line {
@@ -232,9 +238,14 @@
         height: 600px;
     }
 
-    .carousel-wrapper div {
+    #list_slider .carousel-wrapper div {
         height: 600px;
         width: 600px;
+    }
+
+    #reviews_slider .carousel-wrapper div {
+        height: 380px;
+        width: 380px;
     }
 }
 
@@ -261,9 +272,14 @@
         height: 400px;
     }
 
-    .carousel-wrapper div {
+    #list_slider .carousel-wrapper div {
         height: 400px;
         width: 400px;
+    }
+
+    #reviews_slider .carousel-wrapper div {
+        height: 300px;
+        width: 300px;
     }
 
     .button_02 {
@@ -326,9 +342,14 @@
     .carousel-wrapper {
         height: 300px;
     }
-    .carousel-wrapper div {
+    #list_slider .carousel-wrapper div {
         height: 300px;
         width: 300px;
+    }
+
+    #reviews_slider .carousel-wrapper div {
+        height: 200px;
+        width: 200px;
     }
 
     .table {
