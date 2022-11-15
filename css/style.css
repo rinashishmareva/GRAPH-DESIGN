@@ -423,17 +423,17 @@ body {
 #list_prev {
     left:10%;
     transition: 0.5s;
-    
 }
+
 #list_next {
     right:10%;
-    transition: 0.5s;
-    
+    transition: 0.5s; 
 }
+
 #list_prev img, #list_next img {
     width:100%;
-  
 }
+
 #list_prev:hover,
 #list_next:hover {
     opacity: 50%;
@@ -467,9 +467,9 @@ body {
 }
 #reviews_next {
     right:10%;
-    transition: 0.5s;
-    
+    transition: 0.5s; 
 }
+
 #reviews_prev img,#reviews_next img {
     width:100%;
   
@@ -551,6 +551,8 @@ body {
 
 /* Button_02 styles end */
 
+/* Slider_reviews styles start */
+
 .reviews {    
     position: relative;
     background-color: #E7E7E5;
@@ -578,11 +580,8 @@ body {
     padding-top: 20px;
     padding-bottom: 50px;
     text-decoration: none;
+    cursor: pointer;
 }
-
-/* Slider_reviews styles start */
-  
-
 
 /* Slider_reviews styles end */
 

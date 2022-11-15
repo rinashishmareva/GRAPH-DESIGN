@@ -2,14 +2,21 @@
 @media only screen and (max-width: 2000px) {
     
     
-    .arrow-next.arrow_type1 {
-        display: none;
+    #reviews_prev {
+        left:5%;   
     }
-    .arrow-prev.arrow_type1 {
-        right: 400px;
-        top: 1120px;
+
+    #reviews_next {
+        right:5%;
     }
-  
+
+    #list_prev {
+        left:5%;   
+    }
+
+    #list_next {
+        right:5%;
+    }
 
     .button_consult {
         z-index: 1;
@@ -61,14 +68,45 @@
     .carousel-wrapper {
         height: 800px;
     }
+
     #list_slider .carousel-wrapper div {
         height: 800px;
         width: 800px;
     }
     
+    .reviews_title {
+        padding-top: 20px;
+    }
+    
+    #reviews_slider .carousel-wrapper{
+        margin-bottom: 100px;
+    }
     #reviews_slider .carousel-wrapper div {
         height: 500px;
         width: 500px;
+    }
+
+    #reviews_prev {
+        display: none;  
+    }
+
+    #reviews_next {
+        right:45%;
+        top: 90%;
+    }
+
+    #list_prev {
+        left:5%; 
+        scale: 0.7;   
+    }
+
+    #list_next {
+        right:5%;
+        scale: 0.7; 
+    }
+
+    .start_edu_title {
+        padding-top: 20px;
     }
 
     .button_02 {
@@ -203,9 +241,14 @@
 
    
     .download_02 {
-        font-size: 7vw;
+        font-size: 4vw;
         line-height: 30px;
     }
+
+    #reviews_slider .carousel-wrapper{
+        margin-bottom: 20px;
+    }
+
 
     
 
@@ -272,6 +315,11 @@
         height: 400px;
     }
 
+    #reviews_slider .carousel-wrapper{
+       height: 450px;
+    }
+
+
     #list_slider .carousel-wrapper div {
         height: 400px;
         width: 400px;
@@ -280,6 +328,10 @@
     #reviews_slider .carousel-wrapper div {
         height: 300px;
         width: 300px;
+    }
+
+    #reviews_next {
+        scale: 0.8;
     }
 
     .button_02 {
@@ -342,6 +394,11 @@
     .carousel-wrapper {
         height: 300px;
     }
+
+    #reviews_slider .carousel-wrapper{
+        height: 350px;
+     }
+
     #list_slider .carousel-wrapper div {
         height: 300px;
         width: 300px;
@@ -350,6 +407,12 @@
     #reviews_slider .carousel-wrapper div {
         height: 200px;
         width: 200px;
+    }
+
+    #reviews_next {
+        scale: 0.6;
+        right:40%;
+        top: 85%;
     }
 
     .table {
@@ -370,6 +433,7 @@
     .list_table, td {
         padding: 25px;
     }
+    
 
     .button_03 {
         margin-left: 10px;
@@ -407,6 +471,23 @@
     .list_table, td {
         padding: 15px;
     }
+
+    #reviews_slider .carousel-wrapper{
+        height: 250px;
+    }
+
+    #reviews_slider .carousel-wrapper div {
+        height: 180px;
+        width: 180px;
+    }
+
+    #reviews_next {
+        scale: 0.5;
+        right:30%;
+        top: 85%;
+    }
+
+    
 
     .price {
         font-size: 18px;
