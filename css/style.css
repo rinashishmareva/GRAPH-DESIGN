@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -29,6 +30,10 @@ body {
     font-style: normal;
     font-weight: normal;
     position: relative;
+}
+
+.header_nav {
+    z-index: 10;
 }
 
 .header_wrapper {
@@ -574,6 +579,7 @@ body {
 }
 
 .download_02 {
+    position: relative;
     font-size: 50px;
     line-height: 60px;
     color: #1E1E1E;
@@ -581,6 +587,7 @@ body {
     padding-bottom: 50px;
     text-decoration: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 /* Slider_reviews styles end */
