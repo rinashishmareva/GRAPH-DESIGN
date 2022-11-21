@@ -140,6 +140,10 @@
         transition: 0.2s all linear;
     }
 
+    .header_wrapper {
+        padding-top: 30px;
+    }
+
     .header_nav_active {
         transform: translateX(0);
     }
@@ -207,7 +211,7 @@
     }
 
     .gragient_1 {
-        padding-top: 0; /*не работают медиа для картинки*/
+        padding-top: 0;
         padding-left: 0;
     }
 
@@ -217,6 +221,15 @@
 
     #rina {
         display: none;
+    }
+
+    .list {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #list_slider {
+        padding-top: 20px;
     }
 
     
@@ -235,7 +248,7 @@
     }
 
     .download {
-        font-size: 5vw;
+        font-size: 3vw;
         line-height: 30px;
     }
 
@@ -243,6 +256,7 @@
     .download_02 {
         font-size: 4vw;
         line-height: 30px;
+        padding-bottom: 0;
     }
 
     #reviews_slider .carousel-wrapper{
@@ -335,7 +349,11 @@
     }
 
     .button_02 {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .button_register {
+        padding: 5px;
     }
 
     .table {

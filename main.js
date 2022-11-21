@@ -79,4 +79,14 @@ function animate(slider_arr, loop) {
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('header_nav_active');
     });
+
+    const headerLinks = document.querySelectorAll('.header_link');
+    headerLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (menu.classList.contains('header_nav_active')) {
+                    menu.classList.remove('header_nav_active');
+                }
+         
+        })
+    })
 }());
